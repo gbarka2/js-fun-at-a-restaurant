@@ -48,7 +48,6 @@ function createRecipe(title, ingredients, menuItemType) {
     type: menuItemType
   }
   return newRecipe
-  console.log(newRecipe);
 }
 
 
