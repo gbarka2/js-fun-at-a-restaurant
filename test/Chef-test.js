@@ -8,25 +8,25 @@ var {
 
 
 describe("Chef (class)", function() {
-  it.skip('should instantiate a chef object', function () {
+  it('should instantiate a chef object', function () {
     var hannah = new Chef("Hannah");
 
     assert.instanceOf(hannah, Chef);
   });
 
-  it.skip("should have a name", function() {
+  it("should have a name", function() {
     var chef = new Chef("Hannah");
 
     assert.equal(chef.name, "Hannah");
   });
 
-  it.skip("should be able to have a different name", function () {
+  it("should be able to have a different name", function () {
     var chef = new Chef("Casey");
 
     assert.equal(chef.name, "Casey");
   });
 
-  it.skip("should work at a restaurant", function() {
+  it("should work at a restaurant", function() {
     var restaurant = createRestaurant("Best Bakery Ever");
     var chef = new Chef("Hannah", restaurant);
 
@@ -34,14 +34,14 @@ describe("Chef (class)", function() {
     assert.deepEqual(chef.restaurant, restaurant);
   });
 
-  it.skip("should be able to work at a different restaurant", function () {
+  it("should be able to work at a different restaurant", function () {
     var restaurant = createRestaurant("Amazing Bakery");
     var chef = new Chef("Scott", restaurant);
 
     assert.deepEqual(chef.restaurant, restaurant);
   });
 
-  it.skip("should be able to great a customer by name", function() {
+  it("should be able to great a customer by name", function() {
     var scott = new Chef("Scott");
 
     assert.equal(scott.greetCustomer("Will"), "Hello, Will!");
@@ -60,10 +60,10 @@ describe("Chef (class)", function() {
     var restaurant = createRestaurant("Average Bakery");
     var chef = new Chef("Hannah", restaurant);
 
-    var foodItem = { 
+    var foodItem = {
       name: "Cinnamon Rolls",
       price: "4.49",
-      type: "breakfast" 
+      type: "breakfast"
     };
 
     addMenuItem(chef.restaurant, foodItem);
